@@ -13,8 +13,13 @@ Assuma que a e b tem tamanho 2 ou maior.
 """
 
 def mix_up(a, b):
-    # +++ SUA SOLUÇÃO +++
-    return
+    if (len(a) and len(b) >= 2):
+        c = b[0:2]+a[2:]
+        d = a[0:2] + b[2:]
+        e= (f'{c} {d}')
+    else:
+        print('O texto precisa ter o tamanho de 2 ou maior')
+    return e
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

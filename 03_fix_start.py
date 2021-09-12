@@ -17,8 +17,12 @@ def fix_start(s):
     first = s[0]
     convert = str(s)
     convert = convert.replace(first,'*')
-    for i in range(1,len(convert)):
-        first += convert[i]
+    if(len(convert) >= 1):
+        for i in range(1,len(convert)):
+            first += convert[i]
+    else:
+        print('A string precisa ter tamanho 1 ou maior')
+
     return first
 
 
