@@ -14,11 +14,13 @@ onde todas as instancias de stra foram substituidas por strb.
 """
 
 def fix_start(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    first = s[0]
+    convert = str(s)
+    convert = convert.replace(first,'*')
+    for i in range(1,len(convert)):
+        first += convert[i]
+    return first
 
-
-# --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
 def test(f, in_, expected):
     """
