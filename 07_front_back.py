@@ -11,10 +11,19 @@ Finalmente, dadas duas strings a e b, retorne uma string na forma:
 a-frente + b-frente + a-trás + b-trás
 """
 def front_back(a, b):
-    # +++ SUA SOLUÇÃO +++
-    return
+
+    def indice(a):
+        if (len(a) % 2 == 0):
+            return len(a) // 2
+        else:
+            return len(a) // 2+1
 
 
+
+
+    return ''.join([a[:indice(a)], b[:indice(b)], a[indice(a):], b[indice(b):]])
+
+    print(front_back('abcd','abcd'))
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
 def test(f, in_, expected):
