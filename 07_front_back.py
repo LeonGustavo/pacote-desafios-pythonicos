@@ -18,9 +18,6 @@ def front_back(a, b):
         else:
             return len(a) // 2+1
 
-
-
-
     return ''.join([a[:indice(a)], b[:indice(b)], a[indice(a):], b[indice(b):]])
 
     print(front_back('abcd','abcd'))
