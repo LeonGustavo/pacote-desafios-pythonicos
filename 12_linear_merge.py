@@ -1,3 +1,4 @@
+from heapq import merge
 """
 12. linear_merge
 
@@ -11,7 +12,7 @@ A sua solução deve rodar em tempo linear, ou seja, deve fazer uma
 
 def linear_merge(list1, list2):
     # +++ SUA SOLUÇÃO +++
-    return
+    return list(merge(list1,list2))
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
